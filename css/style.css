@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cinzel+Decorative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Cinzel+Decorative&display=swap");
+/*
+
+    font-family: 'Berkshire Swash', cursive;
+
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Berkshire Swash', serif;
+font-family: 'Cinzel Decorative', serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #030303;
+  width: 100%;
+  height: 8.125rem; }
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    header .navbar .collapse {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      header .navbar .collapse ul .nav-item {
+        padding: 1.25rem;
+        border-left: .125rem;
+        border-color: black;
+        font-size: 1.25rem;
+        color: white;
+        position: static; }
+        header .navbar .collapse ul .nav-item a {
+          color: white; }
+        header .navbar .collapse ul .nav-item a:hover {
+          color: red; }
+  header .logo {
+    width: 18.75rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .625rem;
+    color: white; }
+    header .logo a picture img {
+      width: 5.625rem;
+      height: 5.625rem;
+      border-color: black;
+      border-style: double;
+      border-radius: 50px; }
+    header .logo h1 {
+      font-size: 1.25rem; }
+
+.bodyIndex {
+  background-color: white; }
+  .bodyIndex .imgPortada {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2.5rem; }
+
+.bodySale {
+  background-color: #bdbcbc; }
+  .bodySale .mainSale {
+    display: flex;
+    width: 93%;
+    height: 100%;
+    background-color: #fafafa;
+    margin: 0 3.125rem 0 3.125rem; }
+    .bodySale .mainSale .carousel {
+      width: 18.75rem;
+      height: 25rem;
+      margin: 1.875rem;
+      border-radius: .625rem;
+      padding-top: 1.875rem; }
+      .bodySale .mainSale .carousel .tituloNews {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700; }
+      .bodySale .mainSale .carousel img {
+        width: 18.75rem;
+        height: 25rem; }
+      .bodySale .mainSale .carousel .carousel-inner {
+        width: 18.75rem;
+        border-radius: .625rem; }
+        .bodySale .mainSale .carousel .carousel-inner .carousel-item {
+          width: 18.75rem; }
+          .bodySale .mainSale .carousel .carousel-inner .carousel-item .card {
+            width: 18.75rem; }
+            .bodySale .mainSale .carousel .carousel-inner .carousel-item .card img {
+              width: 18.75rem;
+              height: 18.75rem; }
+            .bodySale .mainSale .carousel .carousel-inner .carousel-item .card .card-body .btn {
+              background-color: black; }
+            .bodySale .mainSale .carousel .carousel-inner .carousel-item .card .card-body .btn:hover {
+              color: red; }
+          .bodySale .mainSale .carousel .carousel-inner .carousel-item .card-body {
+            width: 18.75rem; }
+            .bodySale .mainSale .carousel .carousel-inner .carousel-item .card-body .list-group {
+              width: 18.75rem; }
+    .bodySale .mainSale .container {
+      margin: 2.5rem; }
+      .bodySale .mainSale .container .row {
+        padding: .625rem; }
+        .bodySale .mainSale .container .row .col {
+          width: 18.75rem;
+          padding: .625rem; }
+          .bodySale .mainSale .container .row .col .card {
+            text-align: start;
+            width: 18.75rem;
+            transition: 0.8s ease-in-out;
+            box-shadow: 0.125rem 0.125rem 0.125rem #666565; }
+            .bodySale .mainSale .container .row .col .card img {
+              width: 18.75rem;
+              height: 18.75rem; }
+            .bodySale .mainSale .container .row .col .card .card-body {
+              width: 18.75rem; }
+              .bodySale .mainSale .container .row .col .card .card-body .btn {
+                background-color: black; }
+              .bodySale .mainSale .container .row .col .card .card-body .btn:hover {
+                color: red; }
+          .bodySale .mainSale .container .row .col .card:hover {
+            box-shadow: 0.3125rem 0.3125rem 0.3125rem #666565; }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #000000;
+  justify-content: space-between;
+  color: white; }
