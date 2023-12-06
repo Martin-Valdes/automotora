@@ -56,9 +56,10 @@
             }
         }
         .container{
-            margin: 2.5rem;
+            margin: 1.25rem;
             
             .row{
+                
                 padding: .625rem;
                 .col{
                     width: 18.75rem;
@@ -81,7 +82,6 @@
                                 color: red;
                             }
                         }
-                        
                     }
                     .card:hover{
                         box-shadow: .3125rem .3125rem .3125rem rgb(102, 101, 101);
