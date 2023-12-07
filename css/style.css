@@ -114,14 +114,14 @@ header {
           padding: .625rem; }
           .bodySale .mainSale .container .row .col .card {
             text-align: start;
-            width: 18.75rem;
+            width: 15.625rem;
             transition: 0.2s ease-in-out;
             box-shadow: 0.125rem 0.125rem 0.125rem #666565; }
             .bodySale .mainSale .container .row .col .card img {
-              width: 18.75rem;
-              height: 18.75rem; }
+              width: 15.625rem;
+              height: 15.625rem; }
             .bodySale .mainSale .container .row .col .card .card-body {
-              width: 18.75rem; }
+              width: 15.625rem; }
               .bodySale .mainSale .container .row .col .card .card-body .btn {
                 background-color: black; }
               .bodySale .mainSale .container .row .col .card .card-body .btn:hover {

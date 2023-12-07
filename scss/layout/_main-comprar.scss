@@ -40,41 +40,36 @@
                             }
                             .btn:hover{
                                 color: red;
-                                
                             }
                         }
-                        
                     }
-                        
                     .card-body {
                         width: 18.75rem;
                         .list-group{
                         width: 18.75rem;
                     }
                     }
-                    
                 }
             }
         }
         .container{
             margin: 1.25rem;
             .row{
-                
                 padding: .625rem;
                 .col{
                     width: 10rem;
                     padding: .625rem;
                     .card{
                         text-align: start;
-                        width: 18.75rem;
+                        width: 15.625rem;
                         transition: 0.2s ease-in-out;
                         box-shadow: .125rem .125rem .125rem rgb(102, 101, 101);
                         img{
-                            width: 18.75rem;
-                            height: 18.75rem;
+                            width: 15.625rem;
+                            height: 15.625rem;
                         }
                         .card-body{
-                            width: 18.75rem;
+                            width: 15.625rem;
                             .btn{
                                 background-color: black;
                             }
@@ -87,13 +82,7 @@
                         box-shadow: .3125rem .3125rem .3125rem rgb(102, 101, 101);
                     }
                 }
-                
             }
-                
-        }
-            
-            
-        
+        }   
     }
-
 }
