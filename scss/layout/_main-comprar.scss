@@ -32,6 +32,7 @@
             .carousel-inner{
                 width: 18.75rem;
                 border-radius: .625rem;
+                box-shadow: .125rem .125rem .125rem rgb(102, 101, 101);
                 .carousel-item{
                     width: 18.75rem;
                     .card{
@@ -65,23 +66,22 @@
                 font-family: 'Pacifico';
             }
             .row{
-                
                 .col{
-                    width: 10rem;
+                    width: 15.625rem;
                     padding: .625rem;
-                    display: flex;
-                    justify-content: center;
+                    
+                    
                     .card{
                         text-align: start;
-                        width: 15.625rem;
+                        width: 14.375rem;
                         transition: 0.2s ease-in-out;
                         box-shadow: .125rem .125rem .125rem rgb(102, 101, 101);
                         img{
-                            width: 15.625rem;
+                            width: 14.375rem;
                             height: 12.5rem;
                         }
                         .card-body{
-                            width: 15.625rem;
+                            width: 14.375rem;
                             .btn{
                                 background-color: black;
                             }
