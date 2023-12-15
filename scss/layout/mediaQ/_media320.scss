@@ -1,0 +1,34 @@
+@media(max-width:768px){
+    .bodySale{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100%;
+        header{
+                .logo{
+                    width: 2.5rem;
+                    height: 1.875rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 1.875rem;
+
+                    a{
+                        picture{
+                            
+                            img{
+                                width: 4.375rem;
+                                height: 4.375rem;
+                                border-color: black;
+                                border-style: double;
+                                border-radius: 50px;
+                            }
+                        }
+                    }
+                    h1{
+                        display: none;
+                    }        
+                }
+            }
+    }    
+}
