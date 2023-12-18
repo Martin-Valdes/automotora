@@ -64,14 +64,62 @@ header {
       font-size: 1.25rem; }
 
 .mainIndex {
-  background-color: white;
+  display: flex;
+  background-color: black;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: c; }
   .mainIndex .imgPortada {
-    padding: 2.5rem; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25rem; }
+    .mainIndex .imgPortada img {
+      padding: .625rem; }
+    .mainIndex .imgPortada iframe {
+      padding: 1.25rem; }
+    .mainIndex .imgPortada .map {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 1.875rem;
+      gap: 1.25rem; }
+      .mainIndex .imgPortada .map img {
+        width: 90%;
+        padding: 1.25rem; }
+
+.financiacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/img/financiacion.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  background-position: center; }
+  .financiacion .logosAutosUno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    gap: 1.25rem; }
+    .financiacion .logosAutosUno img {
+      width: 30%; }
+  .financiacion .logosAutosDos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    gap: 1.25rem; }
+    .financiacion .logosAutosDos img {
+      width: 30%; }
 
 .bodySale {
   background-color: #bdbcbc;
@@ -79,18 +127,18 @@ header {
   height: 100%; }
   .bodySale .mainSale {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 93%;
     height: 100%;
     background-color: #fafafa;
-    margin: 0 3.125rem 0 3.125rem; }
+    margin: 3.125rem; }
     .bodySale .mainSale .carousel {
       display: flex;
       width: 18.75rem;
       height: 100%;
       justify-content: space-between;
       flex-direction: column;
-      margin: 1.875rem;
+      margin: 3.125rem;
       border-radius: .625rem;
       padding-top: 1.25rem; }
       .bodySale .mainSale .carousel .tituloNews {
@@ -126,15 +174,17 @@ header {
         font-size: 2.5rem;
         font-family: 'Pacifico'; }
       .bodySale .mainSale .container .row .col {
+        display: flex;
+        justify-content: center;
         width: 15.625rem;
         padding: .625rem; }
         .bodySale .mainSale .container .row .col .card {
           text-align: start;
-          width: 14.375rem;
+          width: 16.875rem;
           transition: 0.2s ease-in-out;
           box-shadow: 0.125rem 0.125rem 0.125rem #666565; }
           .bodySale .mainSale .container .row .col .card img {
-            width: 14.375rem;
+            width: 16.875rem;
             height: 12.5rem; }
           .bodySale .mainSale .container .row .col .card .card-body {
             width: 14.375rem; }
@@ -145,6 +195,36 @@ header {
         .bodySale .mainSale .container .row .col .card:hover {
           box-shadow: 0.3125rem 0.3125rem 0.3125rem #666565; }
 
+.financiacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/img/financiacion.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  background-position: center; }
+  .financiacion .logosAutosUno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    gap: 1.25rem; }
+    .financiacion .logosAutosUno img {
+      width: 30%; }
+  .financiacion .logosAutosDos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    gap: 1.25rem; }
+    .financiacion .logosAutosDos img {
+      width: 30%; }
+
 footer {
   width: 100%;
   display: flex;
@@ -152,7 +232,8 @@ footer {
   align-items: center;
   background-color: #000000;
   justify-content: space-between;
-  color: white; }
+  color: white;
+  padding: 1.875rem; }
   footer .logosSocials {
     display: flex;
     justify-content: space-between;
@@ -162,6 +243,10 @@ footer {
     footer .logosSocials img {
       width: 2.5rem;
       height: 2.5rem; }
+  footer .sectionUbicacion {
+    font-size: 1.5625rem;
+    color: #ff7300;
+    padding: 1.875rem; }
 
 @media (max-width: 768px) {
   .bodySale {
