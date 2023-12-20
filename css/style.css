@@ -24,25 +24,25 @@ header {
   width: 100%;
   height: 8.125rem;
   border-bottom: solid 0.125rem #3a3a3a; }
-  header .setionIcon {
-    padding-right: 1.875rem; }
-    header .setionIcon .icoWatsapp {
-      position: fixed; }
   header .navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-right: 1.25rem; }
-    header .navbar .collapse ul .nav-item {
-      padding: .625rem;
-      border-left: .125rem;
-      border-color: black;
-      font-size: 1.25rem;
-      color: white; }
-      header .navbar .collapse ul .nav-item a {
+    header .navbar .collapse {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      header .navbar .collapse ul .nav-item {
+        padding: .625rem;
+        border-left: .125rem;
+        border-color: black;
+        font-size: 1.25rem;
         color: white; }
-      header .navbar .collapse ul .nav-item a:hover {
-        color: red; }
+        header .navbar .collapse ul .nav-item a {
+          color: white; }
+        header .navbar .collapse ul .nav-item a:hover {
+          color: red; }
   header .logo {
     width: 18.75rem;
     height: 100%;
@@ -65,17 +65,16 @@ header {
   background-color: black;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: c; }
+  justify-content: center; }
   .mainIndex .imgPortada {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1.25rem; }
     .mainIndex .imgPortada img {
-      padding: .625rem; }
+      padding: .625rem;
+      width: 70%;
+      height: 90%; }
     .mainIndex .imgPortada iframe {
       padding: 1.25rem; }
     .mainIndex .imgPortada .map {
@@ -87,36 +86,47 @@ header {
       .mainIndex .imgPortada .map img {
         width: 90%;
         padding: 1.25rem; }
+  .mainIndex .sectionIcon .icoWatsapp {
+    position: fixed; }
 
-.financiacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 100vh;
-  background-image: url("../assets/img/financiacion.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+main {
   background-color: black;
-  background-position: center; }
-  .financiacion .logosAutosUno {
+  width: 100%; }
+  main .sectionIcon {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 30%;
-    gap: 1.25rem; }
-    .financiacion .logosAutosUno img {
-      width: 30%; }
-  .financiacion .logosAutosDos {
+    justify-content: flex-end;
+    padding-right: 3.75rem; }
+    main .sectionIcon .icoWatsapp {
+      position: fixed; }
+  main .financiacion {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 30%;
-    gap: 1.25rem; }
-    .financiacion .logosAutosDos img {
-      width: 30%; }
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/financiacion.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    background-position: center; }
+    main .financiacion .logosAutosUno {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 30%;
+      gap: 1.25rem; }
+      main .financiacion .logosAutosUno img {
+        width: 30%; }
+    main .financiacion .logosAutosDos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 30%;
+      gap: 1.25rem; }
+      main .financiacion .logosAutosDos img {
+        width: 30%; }
 
 .containerContact {
   width: 100%;
@@ -127,29 +137,34 @@ header {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5625rem;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center; }
+  .containerContact .flyerCtto {
+    width: 40%;
+    margin-left: 18.75rem;
+    display: flex;
+    justify-content: center; }
+    .containerContact .flyerCtto img {
+      width: 50%;
+      height: 100%;
+      border-radius: .3125rem; }
   .containerContact .map {
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding-top: 1.875rem; }
     .containerContact .map .form {
       display: flex;
+      width: 100%;
       flex-direction: column;
       justify-content: center;
-      height: 50%;
+      height: 100%;
       padding: 1.875rem;
       border-color: white;
       border-style: solid;
       border-radius: .625rem; }
-    .containerContact .map .flyerCtto {
-      width: 31.25rem;
-      display: flex;
-      justify-content: center; }
-      .containerContact .map .flyerCtto img {
-        width: 50%;
-        height: 100%;
-        border-radius: .3125rem; }
   .containerContact .ubication {
     padding: 1.875rem; }
     .containerContact .ubication iframe {
@@ -230,36 +245,47 @@ header {
               color: red; }
         .bodySale .mainSale .container .row .col .card:hover {
           box-shadow: 0.3125rem 0.3125rem 0.3125rem #666565; }
+    .bodySale .mainSale .sectionIcon .icoWatsapp {
+      position: fixed; }
 
-.financiacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 100vh;
-  background-image: url("../assets/img/financiacion.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+main {
   background-color: black;
-  background-position: center; }
-  .financiacion .logosAutosUno {
+  width: 100%; }
+  main .sectionIcon {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 30%;
-    gap: 1.25rem; }
-    .financiacion .logosAutosUno img {
-      width: 30%; }
-  .financiacion .logosAutosDos {
+    justify-content: flex-end;
+    padding-right: 3.75rem; }
+    main .sectionIcon .icoWatsapp {
+      position: fixed; }
+  main .financiacion {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 30%;
-    gap: 1.25rem; }
-    .financiacion .logosAutosDos img {
-      width: 30%; }
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/financiacion.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    background-position: center; }
+    main .financiacion .logosAutosUno {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 30%;
+      gap: 1.25rem; }
+      main .financiacion .logosAutosUno img {
+        width: 30%; }
+    main .financiacion .logosAutosDos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 30%;
+      gap: 1.25rem; }
+      main .financiacion .logosAutosDos img {
+        width: 30%; }
 
 footer {
   width: 100%;
@@ -304,6 +330,7 @@ footer {
       display: none; }
   header .container-fluid .show {
     display: flex;
+    align-items: center;
     justify-content: flex-end; }
   header .container-fluid .collapse {
     color: #eb0000;
@@ -313,4 +340,43 @@ footer {
       header .container-fluid .collapse .navbar-nav .nav-item {
         color: red;
         background-color: rgba(117, 117, 117, 0.616);
-        width: 9.375rem; } }
+        width: 9.375rem; }
+  .mainIndex {
+    width: 100%; }
+    .mainIndex .imgPortada {
+      width: 100%;
+      margin-top: 1.25rem; }
+      .mainIndex .imgPortada .imgIndex {
+        width: 100%;
+        height: 100%; }
+    .mainIndex .sectionIcon {
+      display: none; }
+      .mainIndex .sectionIcon .icoWatsapp {
+        position: fixed; }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000000;
+    justify-content: space-between;
+    color: white;
+    padding: 1.25rem;
+    border-top: solid 0.125rem #3a3a3a; }
+    footer .logosSocials {
+      display: flex;
+      justify-content: space-between;
+      width: 15.625rem;
+      padding: 1.875rem;
+      margin-right: 1.875rem;
+      flex-direction: column;
+      gap: .625rem; }
+      footer .logosSocials img {
+        width: 2.5rem;
+        height: 2.5rem; }
+    footer .sectionUbicacion {
+      font-size: 1.5625rem;
+      color: #ff7300;
+      padding: 1.25rem; }
+      footer .sectionUbicacion .tituloLocales {
+        font-size: 1.125rem; } }

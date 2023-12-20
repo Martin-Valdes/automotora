@@ -1,4 +1,5 @@
 @media(max-width:768px){
+    
     header{
         .logo{
             width: 2.5rem;
@@ -26,10 +27,10 @@
    
         .container-fluid{
             .show{
-                display: flex;
-                justify-content: flex-end;
-                
-            }
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
             .collapse{
                 color: rgb(235, 0, 0);
                 width: 6.25rem;
@@ -43,15 +44,67 @@
                         background-color: rgba(117, 117, 117, 0.616);
                         
                         width: 9.375rem;
-                        .nav-link{
-
-                            
-                        }
+                        
                     }
                     
                 }
             }
         }     
     } 
-}
+    .mainIndex{
+        width: 100%;
+        .imgPortada{
+            width: 100%;
+            margin-top: 1.25rem;
+            .imgIndex{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .sectionIcon{
+            display: none;
+        .icoWatsapp{
+            
+            position: fixed;
+        }
+    }
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #000000;
+        justify-content: space-between;
+        color: white;
+        padding: 1.25rem;
+        border-top: solid .125rem rgb(58, 58, 58);
+        .logosSocials{
+            display: flex;
+            justify-content: space-between;
+            width: 15.625rem;
+            padding: 1.875rem;
+            margin-right: 1.875rem;
+            flex-direction: column;
+            gap: .625rem;
+            img{
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+        .sectionUbicacion{
+            
+            font-size: 1.5625rem;
+            color: rgb(255, 115, 0);
+            padding: 1.25rem;
+            .tituloLocales{
+                font-size: 1.125rem;
+                
+            }
+        }
+    }
 
+  
+
+
+}

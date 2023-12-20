@@ -1,4 +1,17 @@
-.financiacion{
+ 
+ main{
+    background-color: black;
+    width: 100%;
+    .sectionIcon{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3.75rem;
+        .icoWatsapp{
+            
+            position: fixed;
+        }
+    }
+     .financiacion{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,4 +45,7 @@
             width: 30%;
         }
     }
+   
+
 }
+ }
