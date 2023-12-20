@@ -1,34 +1,57 @@
 @media(max-width:768px){
-    .bodySale{
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        height: 100%;
-        header{
-                .logo{
-                    width: 2.5rem;
-                    height: 1.875rem;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 1.875rem;
-
-                    a{
-                        picture{
-                            
-                            img{
-                                width: 4.375rem;
-                                height: 4.375rem;
-                                border-color: black;
-                                border-style: double;
-                                border-radius: 50px;
-                            }
-                        }
+    header{
+        .logo{
+            width: 2.5rem;
+            height: 1.875rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1.875rem;
+            a{
+                picture{
+                    img{
+                        width: 4.375rem;
+                        height: 4.375rem;
+                        border-color: black;
+                        border-style: double;
+                        border-radius: 50px;
                     }
-                    h1{
-                        display: none;
-                    }        
                 }
             }
-    }    
+            h1{
+                display: none;
+            }                
+        }
+   
+        .container-fluid{
+            .show{
+                display: flex;
+                justify-content: flex-end;
+                
+            }
+            .collapse{
+                color: rgb(235, 0, 0);
+                width: 6.25rem;
+                
+                .navbar-nav{
+                    
+                    color: rgb(255, 0, 0);
+                    .nav-item{
+                        
+                        color: rgb(255, 0, 0);
+                        background-color: rgba(117, 117, 117, 0.616);
+                        
+                        width: 9.375rem;
+                        .nav-link{
+
+                            
+                        }
+                    }
+                    
+                }
+            }
+        }     
+    } 
 }
+
