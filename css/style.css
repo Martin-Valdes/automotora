@@ -29,19 +29,17 @@ header {
     justify-content: space-between;
     width: 100%;
     padding-right: 1.25rem; }
-    header .navbar .collapse {
-      display: flex;
-      align-items: center;
+    header .navbar .navFooter {
       justify-content: flex-end; }
-      header .navbar .collapse ul .nav-item {
+      header .navbar .navFooter ul .nav-item {
         padding: .625rem;
         border-left: .125rem;
         border-color: black;
         font-size: 1.25rem;
         color: white; }
-        header .navbar .collapse ul .nav-item a {
+        header .navbar .navFooter ul .nav-item a {
           color: white; }
-        header .navbar .collapse ul .nav-item a:hover {
+        header .navbar .navFooter ul .nav-item a:hover {
           color: red; }
   header .logo {
     width: 18.75rem;
@@ -181,7 +179,7 @@ main {
     justify-content: space-around;
     width: 93%;
     height: 100%;
-    background-color: #fafafa;
+    background-color: snow;
     margin: 3.125rem; }
     .bodySale .mainSale .carousel {
       display: flex;
@@ -235,7 +233,7 @@ main {
           transition: 0.2s ease-in-out;
           box-shadow: 0.125rem 0.125rem 0.125rem #666565; }
           .bodySale .mainSale .container .row .col .card img {
-            width: 16.875rem;
+            width: 100%;
             height: 12.5rem; }
           .bodySale .mainSale .container .row .col .card .card-body {
             width: 14.375rem; }
@@ -311,7 +309,7 @@ footer {
     color: #ff7300;
     padding: 1.875rem; }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   header .logo {
     width: 2.5rem;
     height: 1.875rem;
@@ -333,8 +331,7 @@ footer {
     align-items: center;
     justify-content: flex-end; }
   header .container-fluid .collapse {
-    color: #eb0000;
-    width: 6.25rem; }
+    z-index: 999; }
     header .container-fluid .collapse .navbar-nav {
       color: red; }
       header .container-fluid .collapse .navbar-nav .nav-item {
@@ -368,9 +365,10 @@ footer {
       justify-content: space-between;
       width: 15.625rem;
       padding: 1.875rem;
-      margin-right: 1.875rem;
+      margin: 0;
       flex-direction: column;
-      gap: .625rem; }
+      gap: .625rem;
+      align-items: center; }
       footer .logosSocials img {
         width: 2.5rem;
         height: 2.5rem; }
@@ -379,4 +377,165 @@ footer {
       color: #ff7300;
       padding: 1.25rem; }
       footer .sectionUbicacion .tituloLocales {
-        font-size: 1.125rem; } }
+        font-size: 1.125rem; }
+  .bodySale .mainSale {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #cecece;
+    margin: 0; }
+    .bodySale .mainSale .carousel {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      border-radius: .625rem; }
+      .bodySale .mainSale .carousel .tituloNews {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700; }
+      .bodySale .mainSale .carousel img {
+        width: 18.75rem;
+        height: 15.625rem; }
+      .bodySale .mainSale .carousel .carousel-inner {
+        width: 18.75rem;
+        border-radius: .625rem;
+        box-shadow: 0.125rem 0.125rem 0.125rem #666565; }
+        .bodySale .mainSale .carousel .carousel-inner .carousel-item {
+          width: 18.75rem; }
+          .bodySale .mainSale .carousel .carousel-inner .carousel-item .card {
+            width: 18.75rem; }
+            .bodySale .mainSale .carousel .carousel-inner .carousel-item .card img {
+              width: 18.75rem;
+              height: 15.625rem; }
+            .bodySale .mainSale .carousel .carousel-inner .carousel-item .card .card-body .btn {
+              background-color: black; }
+            .bodySale .mainSale .carousel .carousel-inner .carousel-item .card .card-body .btn:hover {
+              color: red; }
+          .bodySale .mainSale .carousel .carousel-inner .carousel-item .card-body {
+            width: 18.75rem; }
+            .bodySale .mainSale .carousel .carousel-inner .carousel-item .card-body .list-group {
+              width: 18.75rem; }
+    .bodySale .mainSale .container {
+      margin: 1.25rem; }
+      .bodySale .mainSale .container .tituloGallery {
+        display: none; }
+      .bodySale .mainSale .container .row .col {
+        display: flex;
+        justify-content: center;
+        width: 15.625rem;
+        padding: .625rem; }
+        .bodySale .mainSale .container .row .col .card {
+          text-align: start;
+          width: 16.875rem;
+          transition: 0.2s ease-in-out;
+          box-shadow: 0.125rem 0.125rem 0.125rem #666565; }
+          .bodySale .mainSale .container .row .col .card img {
+            width: 100%;
+            height: 12.5rem; }
+          .bodySale .mainSale .container .row .col .card .card-body {
+            width: 14.375rem; }
+            .bodySale .mainSale .container .row .col .card .card-body .btn {
+              background-color: black; }
+            .bodySale .mainSale .container .row .col .card .card-body .btn:hover {
+              color: red; }
+        .bodySale .mainSale .container .row .col .card:hover {
+          box-shadow: 0.3125rem 0.3125rem 0.3125rem #666565; }
+    .bodySale .mainSale .sectionIcon {
+      display: none; }
+      .bodySale .mainSale .sectionIcon .icoWatsapp {
+        position: fixed; }
+  main {
+    background-color: black;
+    width: 100%;
+    margin: 0; }
+    main .sectionIcon {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 3.75rem; }
+      main .sectionIcon .icoWatsapp {
+        z-index: 999;
+        position: fixed; }
+    main .financiacion {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100vh;
+      background-image: url("../assets/img/financiacion.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: black;
+      background-position: top;
+      align-items: center;
+      padding: .625rem; }
+      main .financiacion .logosAutosUno {
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        gap: 1.25rem; }
+        main .financiacion .logosAutosUno img {
+          width: 30%; }
+      main .financiacion .logosAutosDos {
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        gap: 1.25rem; }
+        main .financiacion .logosAutosDos img {
+          width: 30%; }
+  .containerContact {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    padding: 1.25rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5625rem;
+    flex-direction: column;
+    align-items: center; }
+    .containerContact .flyerCtto {
+      width: 90%;
+      margin-left: 0;
+      display: flex;
+      justify-content: center; }
+      .containerContact .flyerCtto img {
+        width: 50%;
+        height: 100%;
+        border-radius: .3125rem; }
+    .containerContact .map {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      padding-top: 1.875rem; }
+      .containerContact .map p {
+        display: none; }
+      .containerContact .map .form {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: .3125rem;
+        border-color: white;
+        border-style: solid;
+        border-radius: .625rem; }
+    .containerContact .ubication {
+      padding: 1.875rem; }
+      .containerContact .ubication iframe {
+        width: 31.25rem;
+        height: 18.75rem;
+        border-radius: .3125rem; } }
