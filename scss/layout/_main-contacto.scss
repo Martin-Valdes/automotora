@@ -9,15 +9,18 @@
     font-size: 1.5625rem;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     .flyerCtto{
             width: 40%;
-            margin-left: 18.75rem ;
+           
             display: flex;
             justify-content: center;
+            margin-top: 1.25rem;
             img{
                 width: 50%;
                 height: 100%;
                 border-radius: .3125rem;
+                margin-top: 1.875rem;
                 }
         }
     .map{
@@ -37,6 +40,10 @@
             border-color: white;
             border-style: solid;
             border-radius: .625rem;
+            .inputNombre{
+                color: white;
+                background-color: gray;
+            }
             
         } 
         

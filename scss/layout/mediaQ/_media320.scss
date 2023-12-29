@@ -70,21 +70,22 @@
     }
     footer{
         width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         background-color: #000000;
         justify-content: space-between;
         color: white;
-        padding: 1.25rem;
+        
         border-top: solid .125rem rgb(58, 58, 58);
         .logosSocials{
             display: flex;
             justify-content: space-between;
             width: 15.625rem;
-            padding: 1.875rem;
+            padding: .625rem;
             margin: 0;
-            flex-direction: column;
+            flex-direction: row;
             gap: .625rem;
             align-items: center;
             img{
@@ -92,11 +93,19 @@
                 height: 2.5rem;
             }
         }
+        .datosContacto{
+            display: none;
+        }
         .sectionUbicacion{
-          
+            display: flex;
+            font-size: 1.5625rem;
+            align-items: center;
+            padding: 0;
+            padding-top: 1.25rem;
+            flex-direction: column;
             .tituloLocales{
                 font-size: 1.125rem;
-                
+                align-items: center;
             }
         }
     }
