@@ -304,6 +304,10 @@ footer {
     footer .logosSocials img {
       width: 2.5rem;
       height: 2.5rem; }
+  footer .sectionUbicacion {
+    font-size: 1.5625rem;
+    color: #29ac01;
+    padding: 1.875rem; }
 
 @media (max-width: 1000px) {
   header .logo {
@@ -368,12 +372,8 @@ footer {
       footer .logosSocials img {
         width: 2.5rem;
         height: 2.5rem; }
-    footer .sectionUbicacion {
-      font-size: 1.5625rem;
-      color: #ff7300;
-      padding: 1.25rem; }
-      footer .sectionUbicacion .tituloLocales {
-        font-size: 1.125rem; }
+    footer .sectionUbicacion .tituloLocales {
+      font-size: 1.125rem; }
   .bodySale .mainSale {
     display: flex;
     justify-content: center;
